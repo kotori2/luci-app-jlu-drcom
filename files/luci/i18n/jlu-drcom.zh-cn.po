@@ -1,0 +1,39 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Dr.com Client for JLU"
+msgstr "吉林大学Dr.com认证模块"
+
+msgid "General Setting"
+msgstr "通用设置"
+
+msgid "MAC adress"
+msgstr "MAC地址"
+
+msgid "Computer name"
+msgstr "计算机名"
+
+msgid "Operating system"
+msgstr "操作系统"
+
+msgid "IP adress"
+msgstr "IP地址"
+
+msgid "The static adress used in WAN."
+msgstr "学校分配的静态IP"
+
+msgid "Reconnect on error"
+msgstr "断线重连"
+
+msgid "Log"
+msgstr "日志"
+
+msgid "Daemon log"
+msgstr "守护进程日志"
+
