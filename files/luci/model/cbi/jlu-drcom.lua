@@ -3,14 +3,22 @@
 --
 -- This is free software, licensed under the GNU Affero General Public License v3.0
 -- See /LICENSE for more information.
---
+--pgrep -f newclient.py
 
-local m, s ,o
+local m, s ,o, Status
+local SYS  = require "luci.sys"
+
+if SYS.call("pidof ssr-redir > /dev/null") == 0 then
+	Status = translate("<strong><font color=\"green\">Dr.com is Running</font></strong>")
+else
+	Status = translate("<strong><font color=\"red\">Dr.com is Not Running</font></strong>")
+end
 
 m = Map("jlu-drcom", translate("Dr.com"), translate("Dr.com Client for JLU"))
 
 s = m:section(TypedSection, "general", translate("General Setting") )
 s.anonymous = true
+s.description = string.format("%s<br /><br />", Status)
 
 o = s:option(Value, "mac", translate("MAC adress"))
 o.datatype = "macaddr"

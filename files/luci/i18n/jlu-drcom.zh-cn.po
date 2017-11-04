@@ -37,3 +37,9 @@ msgstr "日志"
 msgid "Daemon log"
 msgstr "守护进程日志"
 
+msgid "<strong><font color=\"red\">Dr.com is Not Running</font></strong>"
+msgstr "<strong><font color=\"red\">Dr.com 不在运行</font></strong>"
+
+msgid "<strong><font color=\"green\">Dr.com is Running</font></strong>"
+msgstr "<strong><font color=\"green\">Dr.com 正在运行</font></strong>"
+
