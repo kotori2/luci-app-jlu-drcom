@@ -35,8 +35,7 @@ o.default = 1
 
 local apply = luci.http.formvalue("cbi.apply")
 if apply then
-	io.popen("/etc/init.d/drcom stop")
-	io.popen("/etc/init.d/drcom start")
+	io.popen("/etc/init.d/drcom stop && /etc/init.d/drcom start")
 end
 
 s = m:section(TypedSection, "general", translate("Log"))
